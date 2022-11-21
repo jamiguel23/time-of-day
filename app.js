@@ -24,7 +24,11 @@ if (myHour > 12) {
 document.getElementById('my-greeting').innerHTML = myGreeting
 
 
-console.log(myGreeting)
+// console.log(myGreeting)
+
+//change the background color of the background element
+
+document.querySelector("html").style.backgroundColor = myColor
 
 
 //https://tinyurl.com/dynamic-html-checker
