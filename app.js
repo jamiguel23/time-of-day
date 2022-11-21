@@ -7,6 +7,7 @@ let myHour = myDate.getHours();
 let myGreeting = '';
 
 
+
 if (myHour > 12) {
     // alert('Good Afternoon!')
     myGreeting = 'Good Afternoon'
@@ -15,6 +16,9 @@ if (myHour > 12) {
     myGreeting = 'Not Afternoon'
 
 }
+
+document.getElementById('my-greeting').innerHTML = myGreeting
+
 
 console.log(myGreeting)
 
