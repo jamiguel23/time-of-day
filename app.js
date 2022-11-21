@@ -5,15 +5,19 @@
 let myDate = new Date();
 let myHour = myDate.getHours();
 let myGreeting = '';
+let myColor = '';
 
 
 
 if (myHour > 12) {
     // alert('Good Afternoon!')
     myGreeting = 'Good Afternoon'
+    myColor = 'green'
 } else {
     // alert('NOT afternoon')
     myGreeting = 'Not Afternoon'
+    myColor = 'white'
+
 
 }
 
@@ -22,8 +26,6 @@ document.getElementById('my-greeting').innerHTML = myGreeting
 
 console.log(myGreeting)
 
-
-document.write('<h3>' + myGreeting + '</h3>');
 
 //https://tinyurl.com/dynamic-html-checker
 document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
