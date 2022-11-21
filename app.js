@@ -4,16 +4,22 @@
 
 let myDate = new Date();
 let myHour = myDate.getHours();
+let myGreeting = '';
 
 
 if (myHour > 12) {
     // alert('Good Afternoon!')
+    myGreeting = 'Good Afternoon'
 } else {
     // alert('NOT afternoon')
+    myGreeting = 'Not Afternoon'
+
 }
 
+console.log(myGreeting)
 
-document.write('<h3>' + greeting + '</h3>');
+
+document.write('<h3>' + myGreeting + '</h3>');
 
 //https://tinyurl.com/dynamic-html-checker
 document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
