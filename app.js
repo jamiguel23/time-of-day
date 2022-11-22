@@ -2,8 +2,9 @@
 
 // console.log('hello world')
 
-let myDate = new Date();
-let myHour = myDate.getHours();
+// let myDate = new Date();
+// let myHour = myDate.getHours();
+let myHour = 4
 let myGreeting = '';
 let myColor = '';
 let myPic = '';
@@ -19,19 +20,27 @@ let myPic = '';
 // Night (11pm to 5am)
 
 
-if (myHour > 12) {
+if (myHour >= 12 && myHour <= 18) {
     // alert('Good Afternoon!')
     myGreeting = 'Good Afternoon'
     myColor = 'green'
     myPic = 'afternoon.jpg'
-} else {
+} else if (myHour >= 5 && myHour <= 12){
     // alert('NOT afternoon')
-    myGreeting = 'Not Afternoon'
-    myColor = 'white'
-    myPic = ''
-
-
-}
+    myGreeting = 'Good Morning'
+    myColor = 'orange'
+    myPic = 'morning.jpg'
+} else if (myHour >= 18 && myHour <= 23){
+    // alert('NOT afternoon')
+    myGreeting = 'Good Evening'
+    myColor = 'red'
+    myPic = 'evening.jpg'
+} else if (myHour <= 5){
+    // alert('NOT afternoon')
+    myGreeting = 'Good Night'
+    myColor = 'blue'
+    myPic = 'night.jpg'
+} 
 
 myPic = 'images/' + myPic
 
