@@ -4,6 +4,7 @@
 
 let myDate = new Date();
 let myHour = myDate.getHours();
+let thisYear = myDate.getFullYear();
 // let myHour = 4
 let myGreeting = '';
 let myColor = '';
@@ -58,5 +59,32 @@ document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.o
 
 
 
-let thisYear = myDate.getFullYear();
 document.getElementById("this-year").innerHTML = thisYear;
+
+let day = myDate.getDay();
+console.log(day);
+
+switch (day) {
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 2:
+       day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+    case 6:
+      day = "Saturday";
+  }
+
+document.getElementById("today").innerHTML = "Today is " + day;
