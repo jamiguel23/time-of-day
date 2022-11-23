@@ -2,9 +2,9 @@
 
 // console.log('hello world')
 
-// let myDate = new Date();
-// let myHour = myDate.getHours();
-let myHour = 4
+let myDate = new Date();
+let myHour = myDate.getHours();
+// let myHour = 4
 let myGreeting = '';
 let myColor = '';
 let myPic = '';
@@ -55,3 +55,8 @@ document.getElementById('my-pic').src = myPic
 document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
 
 document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+
+
+
+let thisYear = myDate.getFullYear();
+document.getElementById("this-year").innerHTML = thisYear;
