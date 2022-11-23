@@ -61,9 +61,11 @@ document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.o
 
 document.getElementById("this-year").innerHTML = thisYear;
 
+
+//Extra credit 
 let day = myDate.getDay();
 // let day = 6
-console.log(day);
+// console.log(day);
 
 switch (day) {
     case 0:
