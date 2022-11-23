@@ -62,6 +62,7 @@ document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.o
 document.getElementById("this-year").innerHTML = thisYear;
 
 let day = myDate.getDay();
+// let day = 6
 console.log(day);
 
 switch (day) {
